@@ -1,0 +1,1 @@
+# rails7_project_template
