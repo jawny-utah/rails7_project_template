@@ -1,0 +1,16 @@
+h1 {
+  @apply text-gray-900 text-3xl font-semibold;
+}
+
+h2 {
+  @apply text-gray-800 text-2xl font-medium;
+}
+
+h3 {
+  @apply text-gray-800 text-xl font-medium;
+}
+
+p {
+  @apply text-gray-800 text-base;
+}
+

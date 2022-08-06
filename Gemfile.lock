@@ -91,8 +91,15 @@ GEM
       reline (>= 0.3.1)
     digest (3.1.0)
     erubi (1.11.0)
+    ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    haml (5.2.2)
+      temple (>= 0.8.0)
+      tilt
+    hotwire-livereload (1.1.0)
+      listen (>= 3.0.0)
+      rails (>= 6.0.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
@@ -103,6 +110,9 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
+    listen (3.7.1)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -166,6 +176,9 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    rb-fsevent (0.11.1)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
     redis (4.7.1)
     regexp_parser (2.5.0)
     reline (0.3.1)
@@ -187,7 +200,9 @@ GEM
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
     strscan (3.0.4)
+    temple (0.8.2)
     thor (1.2.1)
+    tilt (2.0.11)
     timeout (0.3.0)
     turbo-rails (1.1.1)
       actionpack (>= 6.0.0)
@@ -220,6 +235,8 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  haml
+  hotwire-livereload (~> 1.1)
   jbuilder
   jsbundling-rails
   pg (~> 1.1)

@@ -1,0 +1,11 @@
+.input-wrapper {
+  @apply flex flex-col;
+
+  input {
+    @apply border border-gray-400 border-solid px-2 py-2 rounded-lg;
+  }
+
+  label {
+    @apply text-gray-600;
+  }
+}
