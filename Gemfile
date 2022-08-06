@@ -5,9 +5,13 @@ ruby "3.0.0"
 
 gem "bootsnap", require: false
 gem "cssbundling-rails"
+gem "figaro"
 gem "haml"
 gem "jbuilder"
 gem "jsbundling-rails"
+gem "omniauth-rails_csrf_protection"
+gem 'omniauth-twitch', github: "deanocodes/omniauth-twitch", branch: "fix-auth"
+gem "omniauth"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"

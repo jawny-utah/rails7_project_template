@@ -11,3 +11,7 @@
     = label_tag "test", "Test label"
     = text_field_tag "test", "", placeholder: "Test placeholder with 20 maxlength", maxlength: 20
   = button_tag "Test button", class: "button mt-2"
+  - if current_user
+    = link_to "Logout", sessions_path, class: "button", data: { "turbo-method": :delete }
+  - else
+    = button_to "Login with Twitch", '/auth/twitch', class: 'button', data: { method: :post, turbo: "false" }
