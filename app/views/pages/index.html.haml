@@ -1,0 +1,13 @@
+%h1 It's just a test h1 header
+%h2 It's just a test h2 header
+%h3 It's just a test h3 header
+
+%p
+  Test paragraph text. This project was made primarly for me, to make it easy to start a new project.
+  Also I think people, that not so familiar with rails will find it helpfull
+
+.max-w-xs.mt-4
+  .input-wrapper
+    = label_tag "test", "Test label"
+    = text_field_tag "test", "", placeholder: "Test placeholder with 20 maxlength", maxlength: 20
+  = button_tag "Test button", class: "button mt-2"
