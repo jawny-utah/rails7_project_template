@@ -130,6 +130,13 @@ end
 
 It will be responsive to create or get user on its login process.
 
+Add `omniauth.rb` in initializer folder
+```
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :twitch, ENV["twitch_client_id"], ENV["twitch_client_secret"]
+end
+```
+
 ## Generate sessions controller
 
 `rails g controller sessions`
