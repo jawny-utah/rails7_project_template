@@ -176,3 +176,12 @@ end
 Add logout button if current_user present
 
 `= link_to "Logout", sessions_path, class: "button", data: { "turbo-method": :delete }`
+
+## Add view_component gem
+
+Add to Gemfile
+`gem "view_component"`
+
+Generate View component
+
+`rails g component ComponentName`
