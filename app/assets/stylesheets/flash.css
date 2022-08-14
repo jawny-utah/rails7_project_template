@@ -1,0 +1,25 @@
+.flash-wrapper {
+  @apply absolute select-none z-50 top-0 right-0 m-8 gap-y-3 flex flex-col;
+
+  .flash {
+    @apply w-fit opacity-100 transition-opacity font-medium flex py-1 px-3 rounded-md shadow-lg;
+
+    max-width: 260px;
+
+    &--error {
+      @apply bg-red-400 text-gray-100;
+    }
+
+    &--alert {
+      @apply bg-orange-300 text-gray-800;
+    }
+
+    &--notice {
+      @apply bg-slate-200 text-gray-900;
+    }
+
+    &--hide {
+      @apply opacity-0;
+    }
+  }
+}

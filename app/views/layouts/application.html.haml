@@ -12,4 +12,7 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
   %body.px-3
+    .flash-wrapper#flash
+      - flash.each do |type, message|
+        = render FlashComponent.new(msg: message, type: type)
     = yield

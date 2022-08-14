@@ -7,11 +7,11 @@ class SessionsController < ApplicationController
     if user.valid?
       session[:user_id] = user.id
     end
-    redirect_to root_path
+    redirect_to root_path, flash: { notice: "Successfully logined" }
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_path
+    redirect_to root_path, flash: { notice: "Successfully unlogined" }
   end
 end
