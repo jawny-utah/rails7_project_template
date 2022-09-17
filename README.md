@@ -180,6 +180,11 @@ def current_user
 end
 ```
 
-Add logout button if current_user present
+Add login and logout buttons if current_user present
 
-`= link_to "Logout", sessions_path, class: "button", data: { "turbo-method": :delete }`
+```
+- if current_user
+  = link_to "Logout", sessions_path, class: "button", data: { "turbo-method": :delete }
+- else
+  = button_to "Login with Twitch", '/auth/twitch', class: 'button', data: { method: :post, turbo: "false" }
+```
