@@ -38,6 +38,11 @@ Cleanup gem file - remove comments, order all gems name in alphabetics order (`c
 - After converting files you can remove `gem "haml-rails"` line from Gemfile
 - In `tailwind.config.js` file change line
   `'./app/views/**/*.html.erb',` -> `'./app/views/**/*.html.haml'`
+  + add these lines if you are going to use ViewComponent:
+   ```
+   './app/components/**/*.html.haml',
+   './app/components/**/*.rb',
+   ```
 
 ## Add "hotwire-livereload" gem for page to take changes immediately
 
