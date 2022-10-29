@@ -33,7 +33,7 @@ Cleanup gem file - remove comments, order all gems name in alphabetics order (`c
 
 ## Installing haml gem (skip this if you want to stick with classic .html.erb views format)
 
-- Add `gem "haml"` and `gem "haml-rails"` to Gemfile
+- Add `gem "haml"`, `gem "haml-rails"`, `gem "html2haml"` to Gemfile
 - Run `bundle` and `rails haml:erb2haml` to convert all html.erb files into html.haml format
 - After converting files you can remove `gem "haml-rails"` line from Gemfile
 - In `tailwind.config.js` file change line
